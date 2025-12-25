@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonials() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -19,7 +19,7 @@ export default function Testimonials() {
         "Have been using Setapp for almost two years, and I have to say it's the best and the most cost-effective way of having apps on Mac.",
       author: "Arash Pourhabibi",
       handle: "@ArashPourhabibi",
-      bgColor: "#71719A",
+      bgColor: "bg-setapp-lavender",
       social: "twitter",
     },
     {
@@ -27,7 +27,7 @@ export default function Testimonials() {
         "My favorites ❤️ from @Setapp Ulysses, CleanMyMac X, Paste, MindNode, Swift Publisher.",
       author: "Mauricio Sanchez",
       handle: "@m741s",
-      bgColor: "#D9AE89",
+      bgColor: "bg-setapp-tanSecondary",
       social: "instagram",
     },
     {
@@ -35,7 +35,7 @@ export default function Testimonials() {
         "For those of you that wonder where I discover/get all the awesome apps for my Mac that I use, a lot of them are from Setapp!",
       author: "Meredith Sweet",
       handle: "@meredith.sweet.silberstein",
-      bgColor: "#765070",
+      bgColor: "bg-setapp-purple",
       social: "facebook",
     },
     {
@@ -43,7 +43,7 @@ export default function Testimonials() {
         "Setapp has completely changed how I use my Mac. The variety of apps is just incredible for the price.",
       author: "Sarah Jenkins",
       handle: "@sarah_j",
-      bgColor: "#384C75",
+      bgColor: "bg-setapp-blue",
       social: "twitter",
     },
   ];
@@ -91,14 +91,14 @@ export default function Testimonials() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="bg-[#FEFEFE] pt-16 lg:pt-30">
-      <div className="mx-auto max-w-[1260px] px-6 lg:px-7.5 border-b border-[#E5E5E5]">
+    <section className="bg-setapp-white pt-16 lg:pt-30">
+      <div className="mx-auto max-w-[1260px] px-6 lg:px-7.5 border-b border-setapp-border">
         {/* Section Header */}
         <div className="">
           <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-[100px]">
             {/* Title */}
             <div className="lg:w-[500px]">
-              <h2 className="text-[#26262B] text-4xl lg:text-[36px] font-semibold leading-[48px] tracking-[1.3px]">
+              <h2 className="text-setapp-dark text-4xl lg:text-[36px] font-semibold leading-[48px] tracking-[1.3px]">
                 Setapp in your words.
               </h2>
             </div>
@@ -106,7 +106,7 @@ export default function Testimonials() {
             {/* Description and Social Icons */}
             <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between flex-1 gap-6">
               <div className="lg:max-w-[300px]">
-                <p className="text-[#26262B] text-lg font-normal leading-[32px]">
+                <p className="text-setapp-dark text-lg font-normal leading-[32px]">
                   What you say about how Setapp
                   <br className="hidden lg:block" /> powers you up.
                 </p>
@@ -223,11 +223,10 @@ export default function Testimonials() {
                   key={index}
                   className="flex-[0_0_100%] md:flex-[0_0_49%] lg:flex-[0_0_32.333%] min-w-0"
                 >
-                  <div className="bg-[#F5F5F5] rounded-[15px] p-[7px] flex flex-col h-full">
+                  <div className="bg-setapp-offWhite rounded-[15px] p-[7px] flex flex-col h-full">
                     {/* Quote Card */}
                     <div
-                      className="rounded-lg py-[38px] px-[22px]  min-h-[299px]"
-                      style={{ backgroundColor: testimonial.bgColor }}
+                      className={`rounded-lg py-[38px] px-[22px]  min-h-[299px] ${testimonial.bgColor}`}
                     >
                       <p className="text-white text-[26px] font-medium leading-[36px]">
                         {testimonial.quote}
@@ -237,10 +236,10 @@ export default function Testimonials() {
                     {/* Author Info */}
                     <div className="flex items-end justify-between p-6 pt-9.5">
                       <div className="flex flex-col gap-0">
-                        <p className="text-[#26262B] text-lg font-semibold leading-[32px]">
+                        <p className="text-setapp-dark text-lg font-semibold leading-[32px]">
                           {testimonial.author}
                         </p>
-                        <p className="text-[#9F9F9F] text-sm font-semibold leading-[24px]">
+                        <p className="text-setapp-grayMuted text-sm font-semibold leading-[24px]">
                           {testimonial.handle}
                         </p>
                       </div>
@@ -318,7 +317,9 @@ export default function Testimonials() {
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === selectedIndex ? "bg-[#1D1D22]" : "bg-[#D5D4D4]"
+                  index === selectedIndex
+                    ? "bg-setapp-darkHover"
+                    : "bg-setapp-dot"
                 }`}
               />
             ))}

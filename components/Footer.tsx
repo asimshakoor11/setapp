@@ -92,7 +92,7 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-3 py-3.5 bg-[#404547] text-white placeholder:text-[#9D9CA2] rounded-l-md border border-white focus:outline-none focus:ring-2 focus:ring-white/50"
+                  className="flex-1 px-3 py-3.5 bg-setapp-footerInput text-white placeholder:text-setapp-gray rounded-l-md border border-white focus:outline-none focus:ring-2 focus:ring-white/50"
                 />
                 <button className="px-4 py-3.5 bg-white border border-white text-black rounded-r-md hover:bg-white/95 transition-colors">
                   <ChevronRight width={24} height={24} />
@@ -121,8 +121,8 @@ export default function Footer() {
 
         {/* Utility Row: DMCA & Language */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-6 gap-4">
-          <div className="flex bg-[#3A3C41] rounded overflow-hidden text-[10px] font-bold tracking-wider">
-            <span className="bg-[#555555] text-white px-2 py-1 border-r border-[#3A3C41]">
+          <div className="flex bg-setapp-dmcaBg rounded overflow-hidden text-[10px] font-bold tracking-wider">
+            <span className="bg-setapp-dmca text-white px-2 py-1 border-r border-setapp-dmcaBg">
               DMCA
             </span>
             <span className="text-white px-2 py-1">PROTECTED</span>
@@ -135,11 +135,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-[#404547] pt-8">
+        <div className="border-t border-setapp-footerInput pt-8">
           <div className="flex flex-col gap-6">
             {/* Copyright and Social Icons Row */}
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-              <p className="text-[#969799] text-xs leading-relaxed">
+              <p className="text-setapp-grayText text-xs leading-relaxed">
                 © 2023 Setapp Limited, 9 Tallow Street, Youghal, Co. Cork,
                 P36YE14, Ireland. Reg. 584165. VAT ID: IE3425001BH
               </p>
@@ -148,25 +148,25 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#404547] flex items-center justify-center text-[#969799] hover:text-white hover:bg-[#505557] transition-all"
+                  className="w-8 h-8 rounded-full bg-setapp-footerInput flex items-center justify-center text-setapp-grayText hover:text-white hover:bg-setapp-footerInput transition-all"
                 >
                   <Facebook className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#404547] flex items-center justify-center text-[#969799] hover:text-white hover:bg-[#505557] transition-all"
+                  className="w-8 h-8 rounded-full bg-setapp-footerInput flex items-center justify-center text-setapp-grayText hover:text-white hover:bg-setapp-footerInput transition-all"
                 >
                   <Twitter className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#404547] flex items-center justify-center text-[#969799] hover:text-white hover:bg-[#505557] transition-all"
+                  className="w-8 h-8 rounded-full bg-setapp-footerInput flex items-center justify-center text-setapp-grayText hover:text-white hover:bg-setapp-footerInput transition-all"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
                 <a
                   href="#"
-                  className="w-8 h-8 rounded-full bg-[#404547] flex items-center justify-center text-[#969799] hover:text-white hover:bg-[#505557] transition-all"
+                  className="w-8 h-8 rounded-full bg-setapp-footerInput flex items-center justify-center text-setapp-grayText hover:text-white hover:bg-setapp-footerInput transition-all"
                 >
                   <Youtube className="w-4 h-4" />
                 </a>
@@ -177,13 +177,13 @@ export default function Footer() {
             <div className="flex flex-wrap items-center gap-6">
               <a
                 href="#"
-                className="text-[#969799] text-xs hover:text-white transition-colors"
+                className="text-setapp-grayText text-xs hover:text-white transition-colors"
               >
                 Terms of Use
               </a>
               <a
                 href="#"
-                className="text-[#969799] text-xs hover:text-white transition-colors"
+                className="text-setapp-grayText text-xs hover:text-white transition-colors"
               >
                 Privacy Policy
               </a>

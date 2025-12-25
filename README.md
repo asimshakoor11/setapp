@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Setapp Clone - Next.js 16 Project
 
-## Getting Started
+A professional, high-performance landing page clone built with Next.js 16, React 19, and Tailwind CSS 4. This project demonstrates modern web development practices, including dynamic sliders, custom typography, and a unified design system.
 
-First, run the development server:
+## 🚀 Teck Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework**: Next.js 16 (App Router)
+- **Library**: React 19
+- **Styling**: Tailwind CSS 4
+- **Icons**: Lucide React
+- **Slider/Carousel**: Embla Carousel
+- **Typography**: Avenir Next Pro (Custom Fonts)
+- **Asset Handling**: SVGR (SVGs as React Components)
+
+## ✨ Key Features
+
+- **Interactive Hero Section**: Dynamic background image sliders with floating tool icons and smooth transitions.
+- **Custom Design System**: Centralized color palette and typography managed via CSS variables in `globals.css`.
+- **Responsive Navigation**: Tailored header with dynamic link arrays.
+- **Testimonial Sliders**: Professional video and text testimonial sliders using Embla Carousel.
+- **Reusable Components**: Modular `Button` component with multiple variants (hero, store, dark, outline).
+- **Newsletter Integration**: Styled newsletter signup section in the footer.
+- **Project Refinement**: Fully refactored to use dynamic data mapping for footer links and testimonials.
+
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/asimshakoor11/setapp.git
+   cd setapp
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project is configured to use Webpack for production builds to ensure consistent SVG transformation via SVGR.
 
-## Learn More
+To create a production build:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The output will be generated in the `.next` folder.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/app`: Next.js App Router pages and global styles.
+- `/components`: Reusable UI components.
+- `/public`: Static assets, including custom fonts and SVGs.
+- `next.config.ts`: Enhanced configuration for Webpack and SVGR.
+- `tailwind.config.ts`: Tailwind configuration with custom theme extensions.

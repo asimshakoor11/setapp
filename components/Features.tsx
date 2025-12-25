@@ -49,7 +49,7 @@ export default function Features() {
         {/* Two Column Cards */}
         <div className="grid lg:grid-cols-2 gap-5">
           {/* CodeRunner Card */}
-          <div className="group w-full md:w-[580px] bg-[#F4F0E4] rounded-[20px] overflow-hidden hover:scale-[1.02] transition-transform duration-300 pb-15">
+          <div className="group w-full md:w-[580px] bg-setapp-beige rounded-[20px] overflow-hidden hover:scale-[1.02] transition-transform duration-300 pb-15">
             <WriteCode />
             <div className="px-8 lg:px-15">
               <CodeRunner />
@@ -63,7 +63,7 @@ export default function Features() {
           </div>
 
           {/* Meeter Card */}
-          <div className="group w-full md:w-[580px] bg-[#384C75] rounded-[20px] overflow-hidden hover:scale-[1.02] transition-transform duration-300 pt-15">
+          <div className="group w-full md:w-[580px] bg-setapp-blue rounded-[20px] overflow-hidden hover:scale-[1.02] transition-transform duration-300 pt-15">
             <div className="px-8 lg:px-15 mb-[53px]">
               <IconMeter />
               <h3 className="text-white font-semibold text-[26px] leading-[40.04px] align-middle">

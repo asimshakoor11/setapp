@@ -13,25 +13,25 @@ export default function VideoTestimonials() {
       quote:
         "Musicians like Jason use Setapp to push the limits of their creativity, dancing through tasks for more time to play.",
       author: "Jason Staczek",
-      bgColor: "#765070",
+      bgColor: "bg-setapp-purple",
     },
     {
       quote:
         "Creative professionals rely on  to streamline their toolbox and focus on what truly matters: their craft.",
       author: "Elena Rossi",
-      bgColor: "#384C75",
+      bgColor: "bg-setapp-blue",
     },
     {
       quote:
         "Developers find Setapp indispensable for managing complex projects with ease and speed.",
       author: "Marcus Chen",
-      bgColor: "#26262B",
+      bgColor: "bg-setapp-dark",
     },
     {
       quote:
         "Designers use Setapp to access premium tools that help bring their vision to life with precision.",
       author: "Sarah Jenkins",
-      bgColor: "#71719A",
+      bgColor: "bg-setapp-lavender",
     },
   ];
 
@@ -79,7 +79,7 @@ export default function VideoTestimonials() {
     <section
       style={{
         background:
-          "linear-gradient(180deg, #26262b 0%, #26262b 50%, #FEFEFE 50%, #FEFEFE 100%)",
+          "linear-gradient(180deg, var(--color-setapp-dark) 0%, var(--color-setapp-dark) 50%, var(--color-setapp-white) 50%, var(--color-setapp-white) 100%)",
       }}
     >
       <div className="mx-auto max-w-[1395px] pt-10 lg:pt-[130px] px-6 lg:px-10 relative">
@@ -91,8 +91,7 @@ export default function VideoTestimonials() {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="flex-[0_0_100%] min-w-0">
                   <div
-                    className="rounded-[20px] overflow-hidden relative flex flex-col lg:flex-row items-start min-h-[600px] lg:min-h-[720px]"
-                    style={{ backgroundColor: testimonial.bgColor }}
+                    className={`rounded-[20px] overflow-hidden relative flex flex-col lg:flex-row items-start min-h-[600px] lg:min-h-[720px] ${testimonial.bgColor}`}
                   >
                     {/* Left Content Area */}
                     <div className="w-full lg:w-[556px] flex flex-col justify-center pt-8 pl-8 lg:pt-[209px] lg:pl-[91px] z-10 relative">
@@ -117,7 +116,7 @@ export default function VideoTestimonials() {
                         className="w-[74px] h-[74px] rounded-full bg-white flex items-center justify-center hover:bg-white/95 transition-colors shadow-lg mt-10 lg:mt-[132px] cursor-pointer"
                         aria-label="Watch video"
                       >
-                        <Play className="w-6 h-6 text-[#9D9CA2] fill-[#9D9CA2] ml-1" />
+                        <Play className="w-6 h-6 text-setapp-gray fill-setapp-gray ml-1" />
                       </button>
                     </div>
 
@@ -163,7 +162,9 @@ export default function VideoTestimonials() {
                 key={index}
                 onClick={() => scrollTo(index)}
                 className={`w-3 h-3 rounded-full transition-colors cursor-pointer ${
-                  index === selectedIndex ? "bg-[#1D1D22]" : "bg-[#D5D4D4]"
+                  index === selectedIndex
+                    ? "bg-setapp-darkHover"
+                    : "bg-setapp-dot"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
               />

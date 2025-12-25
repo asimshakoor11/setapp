@@ -29,9 +29,9 @@ export const Button = ({
     hero: "bg-white text-setapp-dark border border-white hover:bg-white/95 w-[209.93px] h-[52px] pt-[14px] pr-[30.93px] pb-[14px] pl-[32px] text-base",
     store:
       "bg-white text-black border border-white hover:bg-white/95 w-[62px] h-[52px] pt-[10px] pr-[15px] pb-[10px] pl-[15px]",
-    dark: "bg-[#26262B] text-white hover:bg-[#1a1a1e] px-8 py-3 h-[52px] text-base",
+    dark: "bg-setapp-dark text-white hover:bg-setapp-darkHover px-8 py-3 h-[52px] text-base",
     "dark-outline":
-      "border border-[#26262B] text-[#26262B] hover:bg-[#26262B]/5 px-8 py-3 h-[52px] text-base",
+      "border border-setapp-dark text-setapp-dark hover:bg-setapp-dark/5 px-8 py-3 h-[52px] text-base",
   };
 
   return (
